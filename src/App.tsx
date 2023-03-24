@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Block } from "./Block";
+import { Header } from "./Header";
+import "./index.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <Header />
+      <div className="wrapper">
+        <h1>Кто мы?</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Мы - молодая команда, которая занимается разработкой телеграм ботов
+          для решения ваших задач.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <h1>Почему вам стоит обратиться к нам?</h1>
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <Block>
+            <p>
+              Мы используем облачные функции, это позволяет нам экономить ваши
+              деньги. Вам больше не нужно платить за сервер, который большую
+              часть времени ничего не делает.
+            </p>
+          </Block>
+          <Block>
+            <p>
+              Использование современных технологий, помогает нам создавать ваших
+              будущих ботов максимально быстро и качественно.
+            </p>
+          </Block>
+          <Block>
+            <p>
+              Мы с уважением относимся к каждому нашему клиенту и не против
+              ваших вопросов, ответим на любой из них и будем сопровождать вас
+              на протяжении всего этапа создания бота.
+            </p>
+          </Block>
+          <Block>
+            <p>
+              Если у вас остались какие-то вопросы или вас заинтересовало наше
+              предложение, напишите нам.
+            </p>
+          </Block>
+        </div>
+        <h1>Наши контакты:</h1>
+        <p>• Telegram - https://t.me/zavodetokruto</p>
+      </div>
+    </>
   );
 }
-
-export default App;
