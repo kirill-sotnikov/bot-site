@@ -43,7 +43,9 @@ export default function App() {
           </Block>
         </div>
         <h1>Наши контакты:</h1>
-        <p>• Telegram - https://t.me/zavodetokruto</p>
+        <p>
+          • Telegram - <a href="https://t.me/zavodetokruto">ссылка</a>
+        </p>
       </div>
     </>
   );
